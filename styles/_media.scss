@@ -102,4 +102,17 @@
       height: auto;
     }
   }
+
+  .contact-content-con {
+    flex-direction: column;
+
+    .right-contact {
+      margin-left: 0;
+      .contact-form .submit-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }
