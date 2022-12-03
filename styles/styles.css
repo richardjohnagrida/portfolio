@@ -791,12 +791,18 @@ section {
     grid-row: 3;
   }
   .main-title h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .main-title h2 span {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolios .portfolio-item img {
+    height: auto;
   }
 }/*# sourceMappingURL=styles.css.map */

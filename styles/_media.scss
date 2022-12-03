@@ -85,13 +85,21 @@
 
   .main-title {
     h2 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       span {
-        font-size: 3.5rem;
+        font-size: 3rem;
       }
       .bg-text {
         font-size: 4rem;
       }
+    }
+  }
+
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+
+    .portfolio-item img {
+      height: auto;
     }
   }
 }
