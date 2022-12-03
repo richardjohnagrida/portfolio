@@ -53,7 +53,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
@@ -130,6 +130,7 @@ section {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
+  display: flex;
 }
 .controls .active-btn {
   background-color: var(--color-secondary) !important;
@@ -206,13 +207,14 @@ section {
 }
 .header-content .gallery {
   --g: 4px; /* the gap */
-  --s: 400px; /* the size */
+  --s: 600px; /* the size */
   display: grid;
   border-radius: 50%;
+  padding-top: 3rem;
 }
 .header-content .gallery > img {
   grid-area: 1/1;
-  width: 600px;
+  width: var(--s);
   aspect-ratio: 1;
   -o-object-fit: cover;
      object-fit: cover;
@@ -713,8 +715,27 @@ section {
   header {
     padding: 0 !important;
   }
-  header .right-header {
+  .header-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+  .right-header {
     padding: 2rem !important;
+    grid-row: 1;
+    text-align: center;
+  }
+  .right-header .name {
+    text-align: center;
+  }
+  .left-header {
+    padding: 2rem !important;
+  }
+  .left-header .gallery {
+    --s: 500px;
+    padding-top: 0;
+  }
+  .btn-con {
+    align-self: center;
   }
   .controls {
     top: auto;
@@ -723,5 +744,9 @@ section {
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .controls :hover + .hide {
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-3);
   }
 }/*# sourceMappingURL=styles.css.map */
