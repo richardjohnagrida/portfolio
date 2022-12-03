@@ -3,11 +3,11 @@
     padding: 0 !important;
   }
   .header-content {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-bottom: 6rem;
   }
   .right-header {
-    padding: 2rem !important;
+    padding: 1rem !important;
     grid-row: 1;
     text-align: center;
     .name {
@@ -15,11 +15,12 @@
     }
   }
   .left-header {
-    padding: 2rem !important;
+    padding: 4rem !important;
   }
   .left-header .gallery {
-    --s: 500px;
+    --s: 90%;
     padding-top: 0;
+    justify-content: center;
   }
 
   .btn-con {
