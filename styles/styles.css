@@ -930,6 +930,9 @@ section {
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
+  .portfolio {
+    padding-bottom: 5rem;
+  }
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -937,7 +940,7 @@ section {
     height: auto;
   }
   .contact-container {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .contact-content-con {
     flex-direction: column;
@@ -948,5 +951,14 @@ section {
   }
   .contact-content-con .left-contact .contact-icon {
     justify-content: center;
+  }
+  .contact-content-con .left-contact .contact-info .contact-item {
+    flex-direction: column;
+  }
+  .contact-content-con .left-contact h4 {
+    text-align: center;
+  }
+  .contact-content-con .left-contact p {
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */

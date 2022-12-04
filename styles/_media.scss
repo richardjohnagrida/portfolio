@@ -243,7 +243,9 @@
       }
     }
   }
-
+  .portfolio {
+    padding-bottom: 5rem;
+  }
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
 
@@ -253,7 +255,7 @@
   }
 
   .contact-container {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .contact-content-con {
@@ -264,6 +266,17 @@
     }
     .left-contact .contact-icon {
       justify-content: center;
+    }
+    .left-contact .contact-info .contact-item {
+      flex-direction: column;
+    }
+    .left-contact {
+      h4 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
     }
   }
 }
