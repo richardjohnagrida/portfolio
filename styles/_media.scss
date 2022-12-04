@@ -59,6 +59,9 @@
     width: 60px;
     height: 60px;
   }
+  .contact-container {
+    padding-top: 3rem;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -101,6 +104,21 @@
 
     .portfolio-item img {
       height: auto;
+    }
+  }
+  .contact-container {
+    padding: 3.5rem;
+    .main-title h2 {
+      font-size: 3rem;
+    }
+  }
+  .contact-content-con {
+    flex-direction: column;
+    .right-contact {
+      margin-left: 0;
+    }
+    .left-contact .contact-icon {
+      justify-content: center;
     }
   }
   .theme-btn {
@@ -225,10 +243,15 @@
     }
   }
 
+  .contact-container {
+    padding: 1rem;
+  }
+
   .contact-content-con {
     flex-direction: column;
     .right-contact {
       margin-left: 0;
+      padding-bottom: 5rem;
     }
     .left-contact .contact-icon {
       justify-content: center;
