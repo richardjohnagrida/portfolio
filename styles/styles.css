@@ -718,6 +718,12 @@ section {
   header .header-content {
     font: 1rem;
   }
+  header .header-content .left-header {
+    padding-left: 0;
+  }
+  header .header-content .right-header {
+    padding-right: 0;
+  }
   header .left-header {
     padding-left: 0;
   }
@@ -767,6 +773,9 @@ section {
   .contact-container {
     padding-top: 3rem;
   }
+  .main-title h2 .bg-text {
+    font-size: 5rem;
+  }
 }
 @media screen and (max-width: 960px) {
   header .header-content {
@@ -792,7 +801,7 @@ section {
     align-self: center;
   }
   .about {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .about-container {
     grid-template-columns: repeat(1, 1fr);
